@@ -34,7 +34,7 @@ import openai
 
 client = openai.OpenAI(
     base_url="http://localhost:20128/v1",
-    api_key="sk-9819f37e0fe7cf0e-7b6d54-93b8874f"
+    api_key="sk-9819f37e0fe7cf0e-53b442-02557b8d"
 )
 ```
 
