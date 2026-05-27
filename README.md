@@ -21,6 +21,23 @@ chmod +x install.sh
 3. Во время установки введите пароль для доступа к дашборду.
 4. Откройте `http://localhost:12800` и настройте провайдеров.
 
+## Использование API
+
+Ваш локальный шлюз настроен и готов к работе.
+
+- **API Key**: Сохранен в `.env`
+- **Base URL**: `http://localhost:20128/v1` (OpenAI-совместимый)
+
+### Пример подключения (Python):
+```python
+import openai
+
+client = openai.OpenAI(
+    base_url="http://localhost:20128/v1",
+    api_key="sk-9819f37e0fe7cf0e-7b6d54-93b8874f"
+)
+```
+
 ## Управление
 
 - `pm2 status` — проверить работу OmniRoute.
